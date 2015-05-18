@@ -1,6 +1,6 @@
 var box = document.querySelector('.box');
 var clock = document.querySelector('.clock');
-var colorButton = document.querySelector('.color_button')
+var colorButton = document.querySelector('.color_change')
 var normal = document.querySelector('.normal')
 var buttons = document.querySelector('button')
 function zero(x){
@@ -15,7 +15,10 @@ function pM(x){
   }
   return x
 }
+var currentTime;
+var colorChange;
 function currentTime (){
+  window.clearTimeout(colorChange)
   var currentDate = new Date();
   var hours = zero(pM(currentDate.getHours()));
   var minutes = zero(currentDate.getMinutes());
@@ -28,6 +31,7 @@ box.style.backgroundColor=  nowTime;
 }
 // currentTime();
 function colorChange (){
+  window.clearTimeout(currentTime)
   var currentDate = new Date();
   var hours = zero(pM(currentDate.getHours()));
   var minutes = zero(currentDate.getMinutes());
@@ -37,6 +41,8 @@ function colorChange (){
 var timer = setTimeout(function(){colorChange()}, 1000)
 box.style.backgroundColor= color
 }
+colorButton.addEventListener('click', colorChange)
+normal.addEventListener('click', currentTime)
 
 // var timeE = setTimeout(function())
 
