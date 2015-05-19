@@ -1,11 +1,12 @@
 var box = document.querySelector('.box');
 var clock = document.querySelector('.clock');
-var colorButton = document.querySelector('.color_change')
-var normal = document.querySelector('.normal')
-var army = document.querySelector('.army')
-var buttons = document.querySelector('button')
-var greeting = document.querySelector('.greeting')
-var body = document.querySelector('body')
+var clock2 = document.querySelector('.clock2');
+var colorButton = document.querySelector('.color_change');
+var normal = document.querySelector('.normal');
+var army = document.querySelector('.army');
+var buttons = document.querySelector('button');
+var greeting = document.querySelector('.greeting');
+var body = document.querySelector('body');
 function zero(x){
   if (x < 10){
     x = '0' + x;
@@ -54,7 +55,7 @@ function colorChange (){
   var seconds = zero(currentDate.getSeconds());
   var color = '#' + hours + minutes + seconds;
   greeting.innerHTML= ''
-  clock.innerHTML= color
+  clock2.innerHTML= color
   timerOne(colorChange, 1000)
   body.style.backgroundColor= color
 }

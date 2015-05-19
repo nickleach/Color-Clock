@@ -24,9 +24,19 @@ body{
   color: white;
   font-size: 100px;
   /* margin-bottom: 40px; */
-  left: 480px;
+  left: 450px;
   position: absolute;
   top: 100px;
+}
+.clock2{
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  color: white;
+  font-size: 50px;
+  /* margin-bottom: 40px; */
+  left: 540px;
+  position: absolute;
+  top: 200px;
 }
 button{
   text-align: center;
