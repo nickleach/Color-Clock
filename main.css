@@ -1,16 +1,47 @@
+body{
+  margin: 0;
+  background-color: black;
+}
+.greeting{
+  color: white;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+
+}
+.greeting h2{
+  margin-bottom: 0;
+  font-size: 100px;
+}
 .box{
   background-color: black;
-  width: 700px;
-  height: 500px;
-  font-family: 'Lobster', cursive;
+  width: 100%;
+  height: 100%;
+
 }
 .clock{
   text-align: center;
-  font-family: 'Lobster', cursive;
+  font-family: 'Play', sans-serif;
   color: white;
-  line-height: 500px;
-  font-size: 75px;
+  font-size: 100px;
+  /* margin-bottom: 40px; */
+  left: 480px;
+  position: absolute;
+  top: 100px;
+}
+button{
+  text-align: center;
+  position: fixed;
+  left: 38%;
+  right: auto;
+  margin-top: 10px;
 }
 .color_change{
-  text-align: center;
+  margin-left: 80px;
+}
+.normal{
+  margin-left: 0
+
+}
+.army{
+margin-left: 234px
 }
